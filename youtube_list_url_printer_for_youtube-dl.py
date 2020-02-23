@@ -63,6 +63,7 @@ if __name__=='__main__':
         with open('youtube-dl start list.bat', 'a', encoding='UTF-8') as f:
             for i in videolist:
                 f.write('youtube-dl -f ' + resolution + '+140 ' + i + '\n')
+            f.write('pause')
         print('Saved list youtube-dl start list.bat')
     except Exception:
         print('Failed to save list.bat')
